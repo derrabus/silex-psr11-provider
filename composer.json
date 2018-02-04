@@ -1,0 +1,37 @@
+{
+    "name": "derrabus/silex-psr11-provider",
+    "type": "library",
+    "description": "Privides a PSR-11 compatible container as a service.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexander M. Turek",
+            "email": "me@derrabus.de"
+        }
+    ],
+    "require": {
+        "php": "^5.5.9 || ^7",
+        "pimple/pimple": "^3.2",
+        "psr/container": "^1.0",
+        "symfony/http-kernel": "^3.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.5 || ^7",
+        "silex/silex": "^2.2",
+        "symfony/lts": "^3"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Rabus\\Psr11ServiceProvider\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rabus\\Psr11ServiceProvider\\": "tests"
+        }
+    },
+    "minimum-stability": "stable"
+}
