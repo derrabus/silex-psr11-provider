@@ -21,6 +21,7 @@ Examples
 
 ```php
 
+use Psr\Container\ContainerInterface;
 use Rabus\Psr11ServiceProvider\Psr11ServiceProvider;
 use Silex\Application;
 use Silex\Provider\ServiceControllerServiceProvider;
