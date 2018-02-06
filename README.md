@@ -8,6 +8,18 @@ PSR-11 enables developers to write code that is aware of the service container
 without coupling it to a specific container implementation, thus allowing to
 switch to another service container more easily.
 
+[![Build Status](https://travis-ci.org/derrabus/silex-psr11-provider.svg?branch=master)](https://travis-ci.org/derrabus/silex-psr11-provider)
+
+
+Installation
+------------
+
+Use [Composer](https://getcomposer.org/) to install the package.
+
+```
+composer require derrabus/silex-psr11-provider
+```
+
 
 Usage
 -----
@@ -15,6 +27,7 @@ Usage
 Once you have registered the service provider, you can either access the
 container as service `service_container` or as a controller argument by using
 `Psr\Container\ContainerInterface` as type hint.
+
 
 Examples
 --------
