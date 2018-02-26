@@ -78,3 +78,11 @@ $app->get('/test2', function (ContainerInterface $container) {
 });
 
 ```
+
+
+Blog
+----
+
+This service provider can be used as a stepping stone on the migration path
+from Silex to Symfony. It has been created to illustrate how to
+[decouple Silex applications from the service container implementation](https://medium.com/@derrabus/decoupling-silex-applications-from-the-service-container-implementation-635263f05e52).
