@@ -16,8 +16,8 @@
         "symfony/http-kernel": "^3.3 || ^4"
     },
     "require-dev": {
-        "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.5 || ^7",
-        "silex/silex": "^2.2"
+        "silex/silex": "^2.2",
+        "symfony/phpunit-bridge": "^4"
     },
     "config": {
         "sort-packages": true
