@@ -13,12 +13,11 @@
         "php": "^5.5.9 || ^7",
         "pimple/pimple": "^3.2",
         "psr/container": "^1.0",
-        "symfony/http-kernel": "^3.3"
+        "symfony/http-kernel": "^3.3 || ^4"
     },
     "require-dev": {
         "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.5 || ^7",
-        "silex/silex": "^2.2",
-        "symfony/lts": "^3"
+        "silex/silex": "^2.2"
     },
     "config": {
         "sort-packages": true
