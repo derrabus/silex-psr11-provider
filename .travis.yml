@@ -1,17 +1,20 @@
+dist: xenial
+
 language: php
 
 php:
-  - 5.5
-  - 5.6
-  - 7.0
-  - 7.1
-  - 7.2
+  - '5.6'
+  - '7.0'
+  - '7.1'
+  - '7.2'
+  - '7.3'
 
 matrix:
   include:
-    - php: 5.5.9
+    - php: '5.5.9'
       env: DEPENDENCIES=low
-    - php: 7.3
+      dist: trusty
+    - php: '7.4snapshot'
       env: DEPENDENCIES=dev
 
 before_install:
