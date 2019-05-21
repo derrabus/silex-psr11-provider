@@ -10,11 +10,11 @@ class Psr11ServiceProvider implements ServiceProviderInterface
 {
     public function register(Container $pimple)
     {
-        $pimple['service_container'] = function (Container $c) {
+        $pimple['service_container'] = static function (Container $c) {
             return new Psr11Container($c);
         };
 
-        $pimple->extend('argument_value_resolvers', function (array $resolvers, Container $c) {
+        $pimple->extend('argument_value_resolvers', static function (array $resolvers, Container $c) {
             $resolvers[] = new ArgumentResolver($c['service_container']);
 
             return $resolvers;
