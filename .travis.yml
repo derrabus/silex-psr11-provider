@@ -8,13 +8,14 @@ php:
   - '7.1'
   - '7.2'
   - '7.3'
+  - '7.4'
 
 matrix:
   include:
     - php: '5.5.9'
       env: DEPENDENCIES=low
       dist: trusty
-    - php: '7.4snapshot'
+    - php: '7.4'
       env: DEPENDENCIES=dev
 
 before_install:
