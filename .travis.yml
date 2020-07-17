@@ -7,6 +7,7 @@ php:
   - '7.2'
   - '7.3'
   - '7.4'
+  - nightly
 
 matrix:
   include:
@@ -22,9 +23,9 @@ matrix:
 
 before_install:
   - if [ "$DEPENDENCIES" = "dev" ]; then composer config minimum-stability dev; fi;
+  - if [ "$TRAVIS_PHP_VERSION" = "nightly" ]; then composer config platform.php 7.4.99; fi;
 
 install:
   - if [ "$DEPENDENCIES" = "low" ]; then composer update --prefer-lowest; else composer install; fi;
-  - ./vendor/bin/simple-phpunit install
 
-script: ./vendor/bin/simple-phpunit
+script: ./vendor/bin/phpunit
