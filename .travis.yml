@@ -1,10 +1,8 @@
-dist: xenial
+dist: bionic
 
 language: php
 
 php:
-  - '5.6'
-  - '7.0'
   - '7.1'
   - '7.2'
   - '7.3'
@@ -15,6 +13,10 @@ matrix:
     - php: '5.5.9'
       env: DEPENDENCIES=low
       dist: trusty
+    - php: '5.6'
+      dist: xenial
+    - php: '7.0'
+      dist: xenial
     - php: '7.4'
       env: DEPENDENCIES=dev
 
